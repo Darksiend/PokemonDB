@@ -14,15 +14,16 @@ export default class BerryDetails extends Component {
 
     updateBerry() {
 
-        const {berryId} = this.props;
-        if (!berryId) {
+        const {name} = this.props;
+        if (!name) {
             return;
         }
 
         this.pokeService
-            .getBerry(berryId)
+            .getBerry(name)
             .then((berry) => {
                 this.setState({berry});
+                console.log(berry);
             })
 
     }
@@ -31,6 +32,13 @@ export default class BerryDetails extends Component {
         this.updateBerry();
     }
 
+    componentDidUpdate(prevProps) {
+
+        if (this.props.name !== prevProps.name) {
+            this.updateBerry();
+        }
+
+    }
 
 
     render() {
@@ -40,16 +48,16 @@ export default class BerryDetails extends Component {
             return <span>Select a Berry From the List</span>
         }
 
-        const {berry:{name, size, growth_time}} = this.state;
+        const {berry: {name, size, growth_time}} = this.state;
 
 
         return (
             <div className="person-details card">
                 <img className="person-image"
-                     src={`https://starwars-visualguide.com/assets/img/characters/1.jpg`}/>
+                     src={`https://www.serebii.net/itemdex/sprites/pgl/${name}berry.png`}/>
 
                 <div className="card-body">
-                    <h4>{name} {this.props.berryId}</h4>
+                    <h4>{name} </h4>
                     <ul className="list-group list-group-flush">
                         <li className="list-group-item">
                             <span className="term">Size (cm)</span>

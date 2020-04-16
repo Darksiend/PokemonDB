@@ -4,11 +4,8 @@
     <list default="true" id="6f272b54-e065-496d-97eb-228d463b775c" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/app/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/app/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/berry-details/berry-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/berry-details/berry-details.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/item-list/item-list.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/item-list/item-list.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pokemon-details/berry-details.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/berry-details/berry-details.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pokemon-details/berry-details.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/berry-details/berry-details.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/pokemon-details/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/berry-details/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/random-pokemon/random-pokemon.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/random-pokemon/random-pokemon.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/services/poke-service.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/services/poke-service.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
@@ -23,11 +20,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="item-list.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="item-list.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/components/item-list/item-list.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+            <state relative-caret-position="207">
+              <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -38,8 +35,8 @@
       <file leaf-file-name="app.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/app/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="41">
-              <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
+            <state relative-caret-position="266">
+              <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
               </folding>
@@ -50,29 +47,17 @@
       <file leaf-file-name="berry-details.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/components/berry-details/berry-details.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="455">
+              <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="random-pokemon.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/components/random-pokemon/random-pokemon.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1473">
-              <caret line="96" column="20" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#39#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="poke-service.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="poke-service.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/services/poke-service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="456">
-              <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+            <state relative-caret-position="341">
+              <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
             </state>
           </provider>
         </entry>
@@ -85,11 +70,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/components/app/app.js" />
         <option value="$PROJECT_DIR$/src/components/random-pokemon/random-pokemon.js" />
-        <option value="$PROJECT_DIR$/src/components/item-list/item-list.js" />
         <option value="$PROJECT_DIR$/src/components/berry-details/berry-details.js" />
         <option value="$PROJECT_DIR$/src/services/poke-service.js" />
+        <option value="$PROJECT_DIR$/src/components/app/app.js" />
+        <option value="$PROJECT_DIR$/src/components/item-list/item-list.js" />
       </list>
     </option>
   </component>
@@ -217,12 +202,12 @@
       <option name="presentableId" value="Default" />
       <updated>1587040877190</updated>
       <workItem from="1587040878560" duration="4545000" />
-      <workItem from="1587046060548" duration="9442000" />
+      <workItem from="1587046060548" duration="13978000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13987000" />
+    <option name="totallyTimeSpent" value="18523000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
@@ -256,7 +241,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -309,19 +294,9 @@
     <entry file="file://$PROJECT_DIR$/package.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/app/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="41">
-          <caret line="27" column="29" lean-forward="true" selection-start-line="27" selection-start-column="29" selection-end-line="27" selection-end-column="29" />
-          <folding>
-            <element signature="e#0#39#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/components/random-pokemon/random-pokemon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1473">
+        <state relative-caret-position="386">
           <caret line="96" column="20" selection-start-line="96" selection-start-column="20" selection-end-line="96" selection-end-column="20" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
@@ -331,25 +306,35 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/components/berry-details/berry-details.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="455">
+          <caret line="59" column="24" selection-start-line="59" selection-start-column="24" selection-end-line="59" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/components/item-list/item-list.js">
+    <entry file="file://$PROJECT_DIR$/src/services/poke-service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="24" column="36" lean-forward="true" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
+        <state relative-caret-position="341">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="16" selection-end-line="67" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/components/app/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="14" column="27" selection-start-line="14" selection-start-column="27" selection-end-line="14" selection-end-column="27" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/services/poke-service.js">
+    <entry file="file://$PROJECT_DIR$/src/components/item-list/item-list.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="67" column="12" selection-start-line="67" selection-start-column="12" selection-end-line="67" selection-end-column="12" />
+        <state relative-caret-position="207">
+          <caret line="30" column="25" selection-start-line="30" selection-start-column="25" selection-end-line="30" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

@@ -29,8 +29,10 @@ export default class PokeService {
         return res.results.map(this._transformBerry);
     }
 
-    async getBerry(id) {
-        const berry = await this.getResource(`/berry/${id}/`);
+    async getBerry(name) {
+
+
+        const berry = await this.getResource(`/berry/${name}/`);
         return this._transformBerry(berry);
     }
 
@@ -49,7 +51,6 @@ export default class PokeService {
     }
 
 
-
     _transformPokemon = (pokemon) => {
 
         return {
@@ -65,10 +66,14 @@ export default class PokeService {
 
     _transformBerry = (berry) => {
         return {
-            id: berry.id,
+
+
             name: berry.name,
+            id: berry.id,
             growth_time: berry.growth_time,
-            size: berry.size
+            size: berry.size,
+
+
         }
     }
 

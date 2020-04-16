@@ -20,19 +20,19 @@ export default class ItemList extends Component {
         this.pokeService
             .getAllBerries()
             .then((berriesList) => {
-            this.setState({berriesList});
+                this.setState({berriesList});
 
-            console.log(berriesList)
-        });
+                console.log(berriesList)
+            });
 
     }
 
     renderItems(arr) {
-        return arr.map(({id, name}) => {
+        return arr.map(({name}) => {
             return (
                 <li className="list-group-item"
-                    key={id}
-                    onClick={() => this.props.onItemSelected(id)}>
+                    key={name}
+                    onClick={() => this.props.onItemSelected(name)}>
                     {name}
                 </li>);
         });
@@ -43,9 +43,8 @@ export default class ItemList extends Component {
 
 
         if (!berriesList) {
-            return <Spinner />
+            return <Spinner/>
         }
-
 
 
         const items = this.renderItems(berriesList);
