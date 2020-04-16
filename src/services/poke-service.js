@@ -72,6 +72,7 @@ export default class PokeService {
             id: berry.id,
             growth_time: berry.growth_time,
             size: berry.size,
+            url: berry.url
 
 
         }

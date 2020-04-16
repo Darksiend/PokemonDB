@@ -21,14 +21,12 @@ export default class ItemList extends Component {
             .getAllBerries()
             .then((berriesList) => {
                 this.setState({berriesList});
-
-                console.log(berriesList)
             });
 
     }
 
     renderItems(arr) {
-        return arr.map(({name}) => {
+        return arr.map(({name, url}) => {
             return (
                 <li className="list-group-item"
                     key={name}

@@ -54,7 +54,7 @@ export default class BerryDetails extends Component {
         return (
             <div className="person-details card">
                 <img className="person-image"
-                     src={`https://www.serebii.net/itemdex/sprites/pgl/${name}berry.png`}/>
+                     src={`https://www.serebii.net/itemdex/sprites/pgl/${name}berry.png`}alt="berry"/>
 
                 <div className="card-body">
                     <h4>{name} </h4>

@@ -82,13 +82,13 @@ export default class RandomPokemon extends Component {
 
 const PokemonView = ({pokemon}) => {
 
-    const {id,name, base_experience, height, weight} = pokemon;
+    const {name, base_experience, height, weight} = pokemon;
 
     return (
 
         <React.Fragment>
             <img className="planet-image"
-                 src={`https://img.pokemondb.net/artwork/large/${name}.jpg`}/>
+                 src={`https://img.pokemondb.net/artwork/large/${name}.jpg`} alt="random pokemon"/>
             <div>
                 <h4>Pokemon name</h4>
                 <ul className="list-group list-group-flush">
