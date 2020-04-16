@@ -12,7 +12,7 @@ export default class App extends Component {
 
     state = {
         showRandomPokemon: true,
-        selectedPerson: null
+        selectedPokemon: null
     };
 
     toggleRandomPokemon = () => {
@@ -23,9 +23,9 @@ export default class App extends Component {
         });
     };
 
-    onPersonSelected = (id) => {
+    onPokemonSelected = (id) => {
         this.setState({
-            selectedPerson: id
+            selectedPokemon: id
         });
     };
 
@@ -45,10 +45,10 @@ export default class App extends Component {
 
                 <div className="row mb2">
                     <div className="col-md-6">
-                        <ItemList/>
+                        <ItemList onItemSelected={this.onPokemonSelected}/>
                     </div>
                     <div className="col-md-6">
-                        <BerryDetails/>
+                        <BerryDetails pokemonId={this.state.selectedPokemon}/>
                     </div>
                 </div>
             </div>
