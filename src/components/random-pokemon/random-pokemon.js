@@ -23,7 +23,7 @@ export default class RandomPokemon extends Component {
     componentDidMount() {
 
         this.updatePokemon();
-        this.interval = setInterval(this.updatePokemon, 1000);
+        this.interval = setInterval(this.updatePokemon, 5000);
 
     };
 
@@ -82,7 +82,7 @@ export default class RandomPokemon extends Component {
 
 const PokemonView = ({pokemon}) => {
 
-    const {name, base_experience, height, weight} = pokemon;
+    const {id,name, base_experience, height, weight} = pokemon;
 
     return (
 
@@ -94,7 +94,7 @@ const PokemonView = ({pokemon}) => {
                 <ul className="list-group list-group-flush">
                     <li className="list-group-item">
                         <span className="term">Pokemon name: </span>
-                        <span>{name}</span>
+                        <span>{name} </span>
                     </li>
                     <li className="list-group-item">
                         <span className="term">Base Experience: </span>

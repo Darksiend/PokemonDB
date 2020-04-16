@@ -26,11 +26,11 @@ export default class PokeService {
 
     async getAllBerries() {
         const res = await this.getResource(`/berry/`);
-        return res.results;
+        return res.results.map(this._transformBerry);
     }
 
     async getBerry(id) {
-        const berry = await  this.getResource(`/berry/${id}/`);
+        const berry = await this.getResource(`/berry/${id}/`);
         return this._transformBerry(berry);
     }
 
@@ -43,7 +43,14 @@ export default class PokeService {
         return this.getResource(`/item/${id}/`);
     }
 
-    _transformPokemon(pokemon) {
+    _extractId(item) {
+        const idRegExp = /\/([0-9]*)\/$/;
+        return item.url.match(idRegExp)[1];
+    }
+
+
+
+    _transformPokemon = (pokemon) => {
 
         return {
             id: pokemon.id,
@@ -56,15 +63,14 @@ export default class PokeService {
 
     }
 
-    _transformBerry(berry){
-        return{
-            id: berry.is,
+    _transformBerry = (berry) => {
+        return {
+            id: berry.id,
             name: berry.name,
-            growth_time:berry.growth_time,
-            size:berry.size
+            growth_time: berry.growth_time,
+            size: berry.size
         }
     }
-
 
 
 }

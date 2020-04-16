@@ -11,13 +11,18 @@ export default class ItemList extends Component {
     pokeService = new PokeService();
 
     state = {
-        berriesList: null
+        berriesList: null,
+
     };
 
     componentDidMount() {
 
-        this.pokeService.getAllBerries().then((pokemonList) => {
-            this.setState({pokemonList});
+        this.pokeService
+            .getAllBerries()
+            .then((berriesList) => {
+            this.setState({berriesList});
+
+            console.log(berriesList)
         });
 
     }
@@ -26,22 +31,24 @@ export default class ItemList extends Component {
         return arr.map(({id, name}) => {
             return (
                 <li className="list-group-item"
-                    key={id} onClick={() => this.props.onItemSelected(id)}>
-
+                    key={id}
+                    onClick={() => this.props.onItemSelected(id)}>
                     {name}
                 </li>);
         });
     }
 
     render() {
+        const {berriesList} = this.state;
 
-        const {pokemonList} = this.state;
 
-        if (!pokemonList) {
-            return <Spinner/>
+        if (!berriesList) {
+            return <Spinner />
         }
 
-        const items = this.renderItems(pokemonList);
+
+
+        const items = this.renderItems(berriesList);
         return (
             <ul className="item-list list-group">
                 {items}

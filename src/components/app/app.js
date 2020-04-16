@@ -3,7 +3,7 @@ import React, {Component} from 'react';
 import Header from '../header';
 import RandomPokemon from '../random-pokemon';
 import ItemList from '../item-list';
-import BerryDetails from '../pokemon-details';
+import BerryDetails from '../berry-details';
 
 
 import './app.css';
@@ -12,7 +12,7 @@ export default class App extends Component {
 
     state = {
         showRandomPokemon: true,
-        selectedPokemon: null
+        selectedBerry: 7
     };
 
     toggleRandomPokemon = () => {
@@ -23,10 +23,13 @@ export default class App extends Component {
         });
     };
 
-    onPokemonSelected = (id) => {
+    onBerrySelected = (id) => {
         this.setState({
-            selectedPokemon: id
+            selectedBerry: id
+
         });
+
+
     };
 
     render() {
@@ -45,10 +48,10 @@ export default class App extends Component {
 
                 <div className="row mb2">
                     <div className="col-md-6">
-                        <ItemList onItemSelected={this.onPokemonSelected}/>
+                        <ItemList onItemSelected={this.onBerrySelected}/>
                     </div>
                     <div className="col-md-6">
-                        <BerryDetails pokemonId={this.state.selectedPokemon}/>
+                        <BerryDetails berryId={this.state.selectedBerry}/>
                     </div>
                 </div>
             </div>
